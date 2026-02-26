@@ -5,18 +5,18 @@
 ## 📋 目录
 
 ### 0.1 环境配置
-- [Python环境搭建](./0.1-python-env.md) - Python版本管理、虚拟环境
-- [依赖安装](./0.2-dependencies.md) - 核心库安装与版本管理
+- [Python环境搭建](./0.1-python-env.md) - Python版本管理、虚拟环境 ⏳
+- [依赖安装](./0.2-dependencies.md) - 核心库安装与版本管理 ⏳
 
 ### 0.2 大模型基础
-- [Transformer原理](./1-transformer.md) - Transformer架构详解
-- [Prompt工程](./2-prompt-engineering.md) - 提示词设计技巧
-- [模型微调](./3-fine-tuning.md) - LLM微调基础
+- [Transformer原理](./1-transformer.md) - Transformer架构详解 ⏳
+- [Prompt工程](./2-prompt-engineering.md) - 提示词设计技巧 ⏳
+- [模型微调](./3-fine-tuning.md) - LLM微调基础 ⏳
 
 ### 0.3 检索技术
-- [传统检索方法](./4-traditional-retrieval.md) - TF-IDF、BM25
-- [密集检索](./5-dense-retrieval.md) - DPR、Contriever
-- [向量数据库](./6-vector-db.md) - Faiss、Pinecone等
+- [传统检索方法](./4-traditional-retrieval.md) - TF-IDF、BM25 ⏳
+- [密集检索](./5-dense-retrieval.md) - DPR、Contriever ⏳
+- [向量数据库](./6-vector-db.md) - Faiss、Pinecone等 ⏳
 
 ## 🚀 快速开始
 
@@ -43,3 +43,7 @@
 ## ⏭️ 下一步
 
 完成本模块后，进入 [1-foundations/README.md](../1-foundations/README.md) 学习RAG基础。
+
+---
+
+> ⚠️ **注意**: 带 ⏳ 标记的文档正在编写中，敬请期待！
