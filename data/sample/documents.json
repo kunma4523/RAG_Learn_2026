@@ -1,0 +1,62 @@
+[
+  {
+    "id": "sample_001",
+    "question": "What is Retrieval-Augmented Generation (RAG)?",
+    "answer": "Retrieval-Augmented Generation (RAG) is a technique that combines information retrieval with text generation. It enhances Large Language Models (LLMs) by retrieving relevant information from external knowledge bases and incorporating it into the generation process.",
+    "category": "fundamentals"
+  },
+  {
+    "id": "sample_002",
+    "question": "What are the main components of a RAG system?",
+    "answer": "A RAG system typically consists of three main components: 1) A retriever that finds relevant documents from a knowledge base, 2) A reranker that improves the relevance ordering of retrieved documents, and 3) A generator that produces the final answer based on the query and retrieved context.",
+    "category": "fundamentals"
+  },
+  {
+    "id": "sample_003",
+    "question": "What is the difference between sparse and dense retrieval?",
+    "answer": "Sparse retrieval (like TF-IDF, BM25) uses sparse vectors with keywords and works well for exact matching. Dense retrieval (like DPR, Contriever) uses dense embeddings from neural networks and captures semantic similarity. Hybrid retrieval combines both approaches.",
+    "category": "retrieval"
+  },
+  {
+    "id": "sample_004",
+    "question": "How does BM25 ranking work?",
+    "answer": "BM25 is a probabilistic ranking function used in information retrieval. It scores documents based on term frequency (TF) and inverse document frequency (IDF), with length normalization. The formula considers how many times a query term appears in a document relative to the document length.",
+    "category": "retrieval"
+  },
+  {
+    "id": "sample_005",
+    "question": "What is Dense Passage Retrieval (DPR)?",
+    "answer": "Dense Passage Retrieval (DPR) is a dense retrieval method that uses dual encoders to encode passages and questions into dense vectors. It has shown superior performance over sparse methods like BM25 on various benchmarks.",
+    "category": "retrieval"
+  },
+  {
+    "id": "sample_006",
+    "question": "What is Self-RAG?",
+    "answer": "Self-RAG is a self-reflective retrieval-augmented generation framework. It enables the LLM to decide when to retrieve, when to use retrieved content, and to critically evaluate the generated output for quality and factual correctness.",
+    "category": "architectures"
+  },
+  {
+    "id": "sample_007",
+    "question": "What is Agentic RAG?",
+    "answer": "Agentic RAG combines RAG with AI agents. The agent can plan retrieval strategies, decide when to search, rewrite queries for better results, and use multiple tools. It enables more dynamic and adaptive retrieval compared to static RAG pipelines.",
+    "category": "architectures"
+  },
+  {
+    "id": "sample_008",
+    "question": "What is GraphRAG?",
+    "answer": "GraphRAG combines knowledge graphs with RAG. It uses graph structures to represent entity relationships, enabling more sophisticated retrieval that considers relational information between entities in the knowledge base.",
+    "category": "architectures"
+  },
+  {
+    "id": "sample_009",
+    "question": "What is HyDE (Hypothetical Document Embeddings)?",
+    "answer": "HyDE is a technique where the LLM first generates a hypothetical answer document, then uses this to retrieve real documents. The hypothetical document helps capture the intent of the query for better retrieval.",
+    "category": "architectures"
+  },
+  {
+    "id": "sample_010",
+    "question": "What are common evaluation metrics for RAG systems?",
+    "answer": "Retrieval metrics include Recall@K, Precision@K, MRR, and NDCG. Generation metrics include BLEU, ROUGE, and BERTScore. End-to-end metrics assess answer quality, faithfulness, and relevance. Frameworks like RAGAS provide comprehensive evaluation.",
+    "category": "evaluation"
+  }
+]

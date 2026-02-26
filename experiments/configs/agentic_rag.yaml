@@ -1,0 +1,51 @@
+# Agentic RAG Experiment Configuration
+# ====================================
+
+experiment:
+  name: "agentic_rag_experiment"
+  description: "Experiment for agentic RAG pipeline"
+  seed: 42
+
+# Agent Settings
+agent:
+  # Max iterations
+  max_iterations: 3
+  
+  # Enable verification
+  enable_verification: true
+  
+  # Agent type: rule_based, llm_planned
+  type: "rule_based"
+  
+  # Tools available
+  tools:
+    - "retrieve"
+    - "generate"
+    - "rewrite_query"
+    - "verify"
+
+# Retrieval Settings (same as standard)
+retrieval:
+  type: "dense"
+  embedding_model: "BAAI/bge-base-zh-v1.5"
+  top_k: 10
+
+# Generation Settings
+generation:
+  type: "huggingface"
+  model_name: "Qwen/Qwen2-7B-Instruct"
+  max_tokens: 512
+  temperature: 0.7
+
+# Evaluation
+evaluation:
+  metrics:
+    - "retrieval_latency"
+    - "generation_latency"
+    - "total_latency"
+    - "num_iterations"
+    - "answer_quality"
+  
+  # Compare with baseline
+  compare_with_baseline: true
+  baseline_config: "experiments/configs/standard_rag.yaml"

@@ -1,0 +1,85 @@
+# GraphRAG
+
+**架构名称**: GraphRAG  
+**类型**: 图结构型  
+**难度**: ⭐⭐⭐  
+
+## 1. 论文/来源
+
+- **论文**: From Local to Global: Knowledge Graph Augmented RAG
+- **作者**: Microsoft Research
+- **年份**: 2024
+
+## 2. 核心思想
+
+GraphRAG利用知识图谱增强检索：
+1. **图谱构建**: 从文档中提取实体和关系构建知识图谱
+2. **图检索**: 基于图结构进行关系推理检索
+3. **上下文增强**: 将图路径信息加入生成上下文
+
+## 3. 架构图
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                       GraphRAG                               │
+├─────────────────────────────────────────────────────────────┤
+│                                                              │
+│  ┌──────────────┐     ┌──────────────┐                      │
+│  │   Documents  │────▶│  KG Builder  │                      │
+│  │              │     │ (Entity Ext.)│                      │
+│  └──────────────┘     └──────┬───────┘                      │
+│                              │                               │
+│                              ▼                               │
+│                      ┌──────────────┐                        │
+│                      │ Knowledge    │                        │
+│                      │   Graph     │                        │
+│                      └──────┬───────┘                        │
+│                             │                                │
+│                             ▼                                │
+│  ┌──────────┐     ┌──────────────┐     ┌──────────────┐   │
+│  │  Query   │────▶│ Graph Search │────▶│  Path/Context│   │
+│  │          │     │ (Traverse)  │     │  Retrieval   │   │
+│  └──────────┘     └──────────────┘     └──────┬───────┘   │
+│                                               │             │
+│                                               ▼             │
+│                                      ┌──────────────┐        │
+│                                      │  Generation  │        │
+│                                      └──────────────┘        │
+└─────────────────────────────────────────────────────────────┘
+```
+
+## 4. 适用场景
+
+- 关系密集型问答
+- 复杂多跳推理
+- 需要理解实体关系的场景
+
+## 5. 优点
+
+- 利用图结构进行推理
+- 检索结果更具解释性
+- 支持多跳查询
+
+## 6. 缺点
+
+- 图谱构建开销大
+- 实体识别准确性影响效果
+- 实现复杂
+
+## 7. 代码示例
+
+```python
+from src.retrievers.graph import GraphRetriever
+from src.pipelines import StandardRAGPipeline
+
+# 使用图检索器
+graph_retriever = GraphRetriever(embedding_retriever=dense_retriever)
+pipeline = StandardRAGPipeline(retriever=graph_retriever, generator=generator)
+
+result = query("周杰伦的代表作是什么?")
+```
+
+## 8. 参考文献
+
+- [GraphRAG Microsoft](https://www.microsoft.com/en-us/research/blog/graphrag/)
+- [Knowledge Graph for RAG](https://arxiv.org/abs/2404.xxxxx)
