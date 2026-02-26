@@ -1,0 +1,175 @@
+# RAG-Learning-2026
+
+<p align="center">
+  <a href="#"><img src="https://img.shields.io/badge/Python-3.10+-blue.svg" alt="Python"></a>
+  <a href="#"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License"></a>
+  <a href="#"><img src="https://img.shields.io/badge/Version-0.1.0-orange.svg" alt="Version"></a>
+</p>
+
+<p align="center">
+  <h3>🚀 面向2026年的RAG系统性学习开源项目</h3>
+</p>
+
+本项目整合了经典与前沿的RAG（检索增强生成）架构，提供理论讲解、代码实现、实验评估与前沿追踪，帮助学习者从零构建对RAG的全面认知，并具备实际应用与创新能力。
+
+## ✨ 特性
+
+- 📚 **系统性教程** - 从基础到高级，循序渐进的RAG知识体系
+- 🏗️ **23+ RAG架构** - 涵盖经典9种+补充14种主流架构
+- 💻 **完整代码实现** - 基于LangChain/LlamaIndex的实战代码
+- 📓 **Jupyter Notebook** - 交互式Notebook实战
+- 🧪 **实验框架** - 可复现的实验配置与评估工具
+- 🔄 **持续更新** - 追踪2025-2026最新顶会论文
+
+## 📁 项目结构
+
+```
+RAG-Learning-2026/
+├── docs/                    # 文档教程
+│   ├── 0-prerequisites/     # 预备知识
+│   ├── 1-foundations/       # RAG基础
+│   ├── 2-architectures/     # 各架构详解
+│   ├── 3-advanced/          # 高级专题
+│   └── 4-future/            # 前沿与趋势
+├── notebooks/               # Jupyter Notebook 实战
+├── src/                     # 可复用的代码库
+│   ├── retrievers/          # 检索器实现
+│   ├── generators/          # 生成器封装
+│   ├── pipelines/           # 各架构流程
+│   └── evaluation/          # 评估指标与工具
+├── experiments/             # 实验脚本与配置
+├── data/                    # 示例数据（或数据下载脚本）
+├── references/              # 论文、博客等参考资料
+├── contributions/           # 社区贡献区
+├── README.md                # 项目主页
+├── LICENSE                  # 开源协议
+└── CONTRIBUTING.md          # 贡献指南
+```
+
+## 🗺️ 学习路径
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                        RAG-Learning-2026                        │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                 │
+│   ┌─────────────┐    ┌─────────────┐    ┌─────────────┐       │
+│   │  预备知识    │───▶│  RAG基础    │───▶│  经典架构   │       │
+│   │ Prerequisites│    │ Foundations │    │ Architectures│      │
+│   └─────────────┘    └─────────────┘    └─────────────┘       │
+│                                                │                │
+│                                                ▼                │
+│   ┌─────────────┐    ┌─────────────┐    ┌─────────────┐       │
+│   │  前沿趋势    │◀───│  高级专题   │◀───│  补充架构   │       │
+│   │   Future    │    │  Advanced   │    │ More Archs  │       │
+│   └─────────────┘    └─────────────┘    └─────────────┘       │
+│                                                                 │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+## 🚀 快速开始
+
+### 1. 克隆项目
+
+```bash
+git clone https://github.com/your-username/RAG-Learning-2026.git
+cd RAG-Learning-2026
+```
+
+### 2. 创建虚拟环境
+
+```bash
+# 使用 uv (推荐)
+uv venv
+source .venv/bin/activate  # Linux/Mac
+# 或
+.venv\Scripts\activate     # Windows
+
+# 或使用 conda
+conda create -n rag-learn python=3.10
+conda activate rag-learn
+```
+
+### 3. 安装依赖
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. 运行示例
+
+```python
+from src.pipelines.standard_rag import StandardRAGPipeline
+
+# 初始化pipeline
+pipeline = StandardRAGPipeline(
+    embedding_model="BAAI/bge-base-zh-v1.5",
+    llm_model="Qwen/Qwen2-7B-Instruct"
+)
+
+# 索引文档
+pipeline.index_documents("data/sample_docs/")
+
+# 问答
+answer = pipeline.query("什么是RAG?")
+print(answer)
+```
+
+## 📚 主要内容模块
+
+### 0. 预备知识 (Prerequisites)
+- Python环境与依赖
+- 大模型基础：Transformer、Prompt工程
+- 检索技术：TF-IDF、BM25、密集检索
+
+### 1. RAG基础 (Foundations)
+- 什么是RAG？
+- 标准RAG流程
+- Hello World实现
+
+### 2. 经典RAG架构 (Architectures)
+
+| 类别 | 架构名称 | 核心思想 | 难度 |
+|------|----------|----------|------|
+| 基础型 | 标准 RAG | 单次检索，拼接上下文生成 | ⭐ |
+| 交互型 | 对话式 RAG | 维护对话历史，动态检索 | ⭐⭐ |
+| 自校正型 | Corrective RAG | 检索后验证、重写或补充 | ⭐⭐⭐ |
+| 自适应型 | Adaptive RAG | 根据查询复杂度选择策略 | ⭐⭐⭐ |
+| 自反思型 | Self-RAG | 生成过程中自我反思与检索 | ⭐⭐⭐⭐ |
+| 融合型 | Fusion RAG | 多路检索结果融合排序 | ⭐⭐ |
+| 假设型 | HyDE | 先生成假设文档再检索 | ⭐⭐ |
+| 智能体型 | Agentic RAG | 结合Agent规划与工具调用 | ⭐⭐⭐⭐ |
+| 图结构型 | GraphRAG | 利用知识图谱增强检索 | ⭐⭐⭐ |
+
+### 3. 高级专题 (Advanced)
+- 检索优化：混合检索、重排序、查询改写
+- 生成优化：提示压缩、长上下文利用
+- 评估体系：检索指标、生成指标
+- 效率与部署
+
+### 4. 前沿与趋势 (Future)
+- RAG与Agent结合
+- 多模态RAG
+- 长文本建模
+- 自我进化RAG
+
+## 🤝 贡献指南
+
+欢迎任何形式的贡献！请阅读 [CONTRIBUTING.md](CONTRIBUTING.md) 了解如何参与贡献。
+
+## 📄 许可证
+
+本项目采用 MIT 许可证 - 详见 [LICENSE](LICENSE) 文件。
+
+## 🙏 致谢
+
+- [LangChain](https://github.com/langchain-ai/langchain)
+- [LlamaIndex](https://github.com/run-llama/llama_index)
+- [RAGAS](https://github.com/explodinggradients/ragas)
+- 所有贡献者和社区成员
+
+---
+
+<p align="center">
+  <sub>Built with ❤️ for the RAG community</sub>
+</p>
