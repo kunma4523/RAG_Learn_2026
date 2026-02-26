@@ -3,7 +3,7 @@
 <p align="center">
   <a href="#"><img src="https://img.shields.io/badge/Python-3.10+-blue.svg" alt="Python"></a>
   <a href="#"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License"></a>
-  <a href="#"><img src="https://img.shields.io/badge/Version-0.1.0-orange.svg" alt="Version"></a>
+  <a href="#"><img src="https://img.shields.io/badge/Docs-81-brightgreen.svg" alt="Docs"></a>
 </p>
 
 <p align="center">
@@ -25,10 +25,10 @@
 
 ```
 RAG-Learning-2026/
-├── docs/                    # 文档教程
+├── docs/                    # 文档教程 (81个文件)
 │   ├── 0-prerequisites/     # 预备知识
-│   ├── 1-foundations/        # RAG基础
-│   ├── 2-architectures/      # 各架构详解
+│   ├── 1-foundations/       # RAG基础
+│   ├── 2-architectures/     # 各架构详解
 │   ├── 3-advanced/          # 高级专题
 │   └── 4-future/            # 前沿与趋势
 ├── notebooks/               # Jupyter Notebook 实战
@@ -38,11 +38,11 @@ RAG-Learning-2026/
 │   ├── pipelines/           # 各架构流程
 │   └── evaluation/          # 评估指标与工具
 ├── experiments/             # 实验脚本与配置
-├── data/                   # 示例数据（或数据下载脚本）
-├── references/             # 论文、博客等参考资料
-├── contributions/          # 社区贡献区
-├── README.md               # 项目主页
-├── LICENSE                 # 开源协议
+├── data/                    # 示例数据（或数据下载脚本）
+├── references/              # 论文、博客等参考资料
+├── contributions/           # 社区贡献区
+├── README.md                # 项目主页
+├── LICENSE                  # 开源协议
 └── CONTRIBUTING.md          # 贡献指南
 ```
 
@@ -50,13 +50,11 @@ RAG-Learning-2026/
 
 | 模块 | 内容 | 状态 |
 |------|------|------|
-| [0-prerequisites](./docs/0-prerequisites/README.md) | 预备知识 (Python、ML基础、检索技术) | ⏳ |
-| [1-foundations](./docs/1-foundations/README.md) | RAG基础概念与流程 | ⏳ |
-| [2-architectures](./docs/2-architectures/README.md) | 23种RAG架构详解 | 🔄 |
-| [3-advanced](./docs/3-advanced/README.md) | 高级专题 (优化、评估、部署) | ⏳ |
-| [4-future](./docs/4-future/README.md) | 前沿趋势 (2025-2026) | ⏳ |
-
-> **图例**: ✅ 已完成 | 🔄 部分完成 | ⏳ 编写中
+| [0-prerequisites](./docs/0-prerequisites/README.md) | 预备知识 (Python、ML基础、检索技术) | ✅ 已完成 |
+| [1-foundations](./docs/1-foundations/README.md) | RAG基础概念与流程 | ✅ 已完成 |
+| [2-architectures](./docs/2-architectures/README.md) | 23种RAG架构详解 | ✅ 已完成 |
+| [3-advanced](./docs/3-advanced/README.md) | 高级专题 (优化、评估、部署) | ✅ 已完成 |
+| [4-future](./docs/4-future/README.md) | 前沿趋势 (2025-2026) | ✅ 已完成 |
 
 ## 🗺️ 学习路径
 
@@ -127,43 +125,16 @@ answer = pipeline.query("什么是RAG?")
 print(answer.answer)
 ```
 
-## 📚 主要内容模块
+## 📊 文档统计
 
-### 0. 预备知识 (Prerequisites)
-- Python环境与依赖
-- 大模型基础：Transformer、Prompt工程
-- 检索技术：TF-IDF、BM25、密集检索
-
-### 1. RAG基础 (Foundations)
-- 什么是RAG？
-- 标准RAG流程
-- Hello World实现
-
-### 2. 经典RAG架构 (Architectures)
-
-| 类别 | 架构名称 | 核心思想 | 难度 | 状态 |
-|------|----------|----------|------|------|
-| 基础型 | 标准 RAG | 单次检索，拼接上下文生成 | ⭐ | ✅ |
-| 交互型 | 对话式 RAG | 维护对话历史，动态检索 | ⭐⭐ | ✅ |
-| 自校正型 | Corrective RAG | 检索后验证、重 ⭐⭐⭐写或补充 | | ⏳ |
-| 自适应型 | Adaptive RAG | 根据查询复杂度选择策略 | ⭐⭐⭐ | ⏳ |
-| 自反思型 | Self-RAG | 生成过程中自我反思与检索 | ⭐⭐⭐⭐ | ✅ |
-| 融合型 | Fusion RAG | 多路检索结果融合排序 | ⭐⭐ | ⏳ |
-| 假设型 | HyDE | 先生成假设文档再检索 | ⭐⭐ | ⏳ |
-| 智能体型 | Agentic RAG | 结合Agent规划与工具调用 | ⭐⭐⭐⭐ | ✅ |
-| 图结构型 | GraphRAG | 利用知识图谱增强检索 | ⭐⭐⭐ | ✅ |
-
-### 3. 高级专题 (Advanced)
-- 检索优化：混合检索、重排序、查询改写
-- 生成优化：提示压缩、长上下文利用
-- 评估体系：检索指标、生成指标
-- 效率与部署
-
-### 4. 前沿与趋势 (Future)
-- RAG与Agent结合
-- 多模态RAG
-- 长文本建模
-- 自我进化RAG
+| 模块 | 文件数 | 状态 |
+|------|--------|------|
+| 0-预备知识 | 8 | ✅ |
+| 1-RAG基础 | 8 | ✅ |
+| 2-RAG架构 | 23 | ✅ |
+| 3-高级专题 | 16 | ✅ |
+| 4-前沿趋势 | 20 | ✅ |
+| **总计** | **81** | ✅ **全部完成** |
 
 ## 🤝 贡献指南
 

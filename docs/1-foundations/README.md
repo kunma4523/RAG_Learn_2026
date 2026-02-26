@@ -5,18 +5,18 @@
 ## 📋 目录
 
 ### 1.1 RAG概念
-- [什么是RAG？](./1-what-is-rag.md) - RAG定义与背景 ⏳
-- [为什么需要RAG？](./2-why-rag.md) - RAG的优势与必要性 ⏳
+- [什么是RAG？](./1-what-is-rag.md) - RAG定义与背景 ✅
+- [为什么需要RAG？](./2-why-rag.md) - RAG的优势与必要性 ✅
 
 ### 1.2 标准RAG流程
-- [检索模块](./3-retrieval.md) - 文档检索原理 ⏳
-- [增强模块](./4-augmentation.md) - 上下文增强技术 ⏳
-- [生成模块](./5-generation.md) - 基于检索结果的生成 ⏳
+- [检索模块](./3-retrieval.md) - 文档检索原理 ✅
+- [增强模块](./4-augmentation.md) - 上下文增强技术 ✅
+- [生成模块](./5-generation.md) - 基于检索结果的生成 ✅
 
 ### 1.3 入门实现
-- [LangChain入门](./6-langchain-intro.md) - LangChain基础 ⏳
-- [LlamaIndex入门](./7-llamaindex-intro.md) - LlamaIndex基础 ⏳
-- [Hello World示例](./8-hello-world.md) - 第一个RAG应用 ⏳
+- [LangChain入门](./6-langchain-intro.md) - LangChain基础 ✅
+- [LlamaIndex入门](./7-llamaindex-intro.md) - LlamaIndex基础 ✅
+- [Hello World示例](./8-hello-world.md) - 第一个RAG应用 ✅
 
 ## 🎯 学习目标
 
@@ -60,7 +60,3 @@
 ## ⏭️ 下一步
 
 进入 [2-architectures/README.md](../2-architectures/README.md) 学习各种RAG架构。
-
----
-
-> ⚠️ **注意**: 带 ⏳ 标记的文档正在编写中，敬请期待！
