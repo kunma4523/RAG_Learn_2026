@@ -64,23 +64,5 @@ python tests/rag_architectures/01_standard_rag.py
 
 ## 8. 参考文献
 
-```python
-from src.pipelines import StandardRAGPipeline
-
-pipeline = StandardRAGPipeline(
-    embedding_model="BAAI/bge-base-zh-v1.5",
-    llm_model="gpt-4"
-)
-
-# 索引文档
-pipeline.index_documents(documents)
-
-# 问答
-result = pipeline.query("什么是RAG?")
-print(result.answer)
-```
-
-## 8. 参考文献
-
 - [RAG Paper](https://arxiv.org/abs/2005.11401)
 - [LangChain RAG](https://python.langchain.com/docs/use_cases/question_answering/)

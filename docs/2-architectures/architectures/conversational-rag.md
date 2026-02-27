@@ -71,20 +71,4 @@ python tests/rag_architectures/02_conversational_rag.py
 
 ## 8. 参考文献
 
-```python
-from src.pipelines import ConversationalRAGPipeline
-
-pipeline = ConversationalRAGPipeline(
-    retriever=retriever,
-    generator=chat_generator,
-    max_history=10
-)
-
-# 多轮对话
-result1 = pipeline.query("RAG是什么?")
-result2 = pipeline.query("它和微调有什么区别?")
-```
-
-## 8. 参考文献
-
 - [LangChain Conversation](https://python.langchain.com/docs/modules/chains/)

@@ -92,20 +92,5 @@ python tests/rag_architectures/08_agentic_rag.py
 
 ## 8. 参考文献
 
-```python
-from src.pipelines import AgenticRAGPipeline
-
-pipeline = AgenticRAGPipeline(
-    retriever=retriever,
-    generator=generator,
-    max_iterations=3,
-    enable_verification=True
-)
-
-result = pipeline.query("查找2024年ACL最佳论文并总结其贡献")
-```
-
-## 8. 参考文献
-
 - [LangChain Agents](https://python.langchain.com/docs/modules/agents/)
 - [LlamaIndex Agents](https://docs.llamaindex.ai/en/stable/module_guides/querying/agent/)

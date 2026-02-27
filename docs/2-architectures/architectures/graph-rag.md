@@ -78,18 +78,5 @@ python tests/rag_architectures/09_graph_rag.py
 
 ## 8. 参考文献
 
-```python
-from src.retrievers.graph import GraphRetriever
-from src.pipelines import StandardRAGPipeline
-
-# 使用图检索器
-graph_retriever = GraphRetriever(embedding_retriever=dense_retriever)
-pipeline = StandardRAGPipeline(retriever=graph_retriever, generator=generator)
-
-result = query("周杰伦的代表作是什么?")
-```
-
-## 8. 参考文献
-
 - [GraphRAG Microsoft](https://www.microsoft.com/en-us/research/blog/graphrag/)
 - [Knowledge Graph for RAG](https://arxiv.org/abs/2404.xxxxx)
