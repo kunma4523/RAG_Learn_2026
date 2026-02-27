@@ -75,6 +75,15 @@ Self-RAG让模型学会自我反思：
 ## 7. 代码示例
 
 ```python
+# 运行测试脚本
+python tests/rag_architectures/05_self_rag.py
+```
+
+或查看完整代码:
+- 测试代码: `tests/rag_architectures/05_self_rag.py`
+- 共享工具: `tests/rag_architectures/__init__.py`
+
+```python
 # Self-RAG 需要使用微调后的模型
 # 参考官方实现: https://github.com/Arieve/Self-RAG
 ```

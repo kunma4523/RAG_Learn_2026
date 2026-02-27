@@ -29,6 +29,18 @@ Query: "他还有什么代表作？"
 
 ## 3. 实现
 
+(代码示例见下方)
+
+## 4. 代码示例
+
+```python
+# 运行测试脚本
+python tests/rag_architectures/11_iterative_rag.py
+```
+
+或查看完整代码:
+- 测试代码: `tests/rag_architectures/11_iterative_rag.py`
+
 ```python
 def iterative_rag(query, max_iterations=3):
     for i in range(max_iterations):

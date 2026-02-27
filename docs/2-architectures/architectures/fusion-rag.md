@@ -32,6 +32,18 @@ def reciprocal_rank_fusion(results_list, k=60):
 
 ## 3. 完整实现
 
+(代码示例见下方)
+
+## 4. 代码示例
+
+```python
+# 运行测试脚本
+python tests/rag_architectures/06_fusion_rag.py
+```
+
+或查看完整代码:
+- 测试代码: `tests/rag_architectures/06_fusion_rag.py`
+
 ```python
 # 多种检索器
 bm25_retriever = BM25Retriever.from_documents(docs)

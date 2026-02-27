@@ -20,3 +20,15 @@
 ## 3. 论文
 
 - [DRAGIN: Dynamic Retrieval Augmented Generation](https://arxiv.org/abs/2401.xxxxx)
+
+## 4. 代码示例
+
+```python
+# 运行测试脚本
+python tests/rag_architectures/19_dragin.py
+```
+
+或查看完整代码:
+- 测试代码: `tests/rag_architectures/19_dragin.py`
+
+- [DRAGIN: Dynamic Retrieval Augmented Generation](https://arxiv.org/abs/2401.xxxxx)

@@ -69,6 +69,16 @@ GraphRAG利用知识图谱增强检索：
 ## 7. 代码示例
 
 ```python
+# 运行测试脚本
+python tests/rag_architectures/09_graph_rag.py
+```
+
+或查看完整代码:
+- 测试代码: `tests/rag_architectures/09_graph_rag.py`
+
+## 8. 参考文献
+
+```python
 from src.retrievers.graph import GraphRetriever
 from src.pipelines import StandardRAGPipeline
 

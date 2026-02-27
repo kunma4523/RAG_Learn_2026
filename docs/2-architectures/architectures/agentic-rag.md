@@ -83,6 +83,16 @@ Agentic RAG将LLM作为Agent，结合规划、推理能力：
 ## 7. 代码示例
 
 ```python
+# 运行测试脚本
+python tests/rag_architectures/08_agentic_rag.py
+```
+
+或查看完整代码:
+- 测试代码: `tests/rag_architectures/08_agentic_rag.py`
+
+## 8. 参考文献
+
+```python
 from src.pipelines import AgenticRAGPipeline
 
 pipeline = AgenticRAGPipeline(

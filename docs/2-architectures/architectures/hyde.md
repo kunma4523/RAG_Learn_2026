@@ -36,6 +36,16 @@ Query: "什么是RAG?"
 ## 3. 代码示例
 
 ```python
+# 运行测试脚本
+python tests/rag_architectures/07_hyde.py
+```
+
+或查看完整代码:
+- 测试代码: `tests/rag_architectures/07_hyde.py`
+
+## 4. 适用场景
+
+```python
 from langchain.chains importhyde
 
 chain = hyde.HypotheticalDocumentEmbedder.from_llm(

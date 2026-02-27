@@ -54,6 +54,17 @@
 ## 7. 代码示例
 
 ```python
+# 运行测试脚本
+python tests/rag_architectures/01_standard_rag.py
+```
+
+或查看完整代码:
+- 测试代码: `tests/rag_architectures/01_standard_rag.py`
+- 共享工具: `tests/rag_architectures/__init__.py`
+
+## 8. 参考文献
+
+```python
 from src.pipelines import StandardRAGPipeline
 
 pipeline = StandardRAGPipeline(

@@ -28,3 +28,15 @@
 ## 3. 论文
 
 - [RAPTOR: Recursive Abstractive Processing for Tree-Organized Retrieval](https://arxiv.org/abs/2401.xxxxx)
+
+## 4. 代码示例
+
+```python
+# 运行测试脚本
+python tests/rag_architectures/21_raptor.py
+```
+
+或查看完整代码:
+- 测试代码: `tests/rag_architectures/21_raptor.py`
+
+- [RAPTOR: Recursive Abstractive Processing for Tree-Organized Retrieval](https://arxiv.org/abs/2401.xxxxx)

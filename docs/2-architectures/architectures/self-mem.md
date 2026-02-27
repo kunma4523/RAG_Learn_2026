@@ -18,3 +18,19 @@
 | 记忆形式 | 对话历史 | 摘要/嵌入 |
 | 检索方式 | 简单回顾 | 语义检索 |
 | 适用 | 多轮对话 | 长对话 |
+
+## 7. 代码示例
+
+```python
+# 运行测试脚本
+python tests/rag_architectures/20_self_mem.py
+```
+
+或查看完整代码:
+- 测试代码: `tests/rag_architectures/20_self_mem.py`
+- 共享工具: `tests/rag_architectures/__init__.py`
+
+## 8. 参考文献
+
+- [Self-Mem Paper](https://arxiv.org/abs/2401.13075)
+- [Self-Mem GitHub](https://github.com/StonyBrookNLP/simlm)

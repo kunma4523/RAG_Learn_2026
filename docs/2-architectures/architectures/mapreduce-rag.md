@@ -41,6 +41,18 @@
 
 ## 3. 实现
 
+(代码示例见下方)
+
+## 4. 代码示例
+
+```python
+# 运行测试脚本
+python tests/rag_architectures/18_mapreduce_rag.py
+```
+
+或查看完整代码:
+- 测试代码: `tests/rag_architectures/18_mapreduce_rag.py`
+
 ```python
 from langchain.chains import MapReduceDocumentsChain
 
